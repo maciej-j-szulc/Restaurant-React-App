@@ -40,6 +40,7 @@ export default function Checkout(){
     function handleSubmit(event){
         event.preventDefault();
 
+        //get form data from event
         const fd = new FormData(event.target);
         //transform form data into object
         const customerData = Object.fromEntries(fd.entries());
